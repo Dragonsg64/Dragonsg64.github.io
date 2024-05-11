@@ -1,3 +1,59 @@
-.header {
-    background: url('images/fond_code.jpg');
+body {
+    margin: 0px;
+}
+
+header {
+    background: url('../images/fond_code.jpg');
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.menu-navigation {
+    position: sticky;
+    z-index: 1;
+    align-items: center;
+    padding: 1em;
+    background: gray;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.menu-navigation .menu li {
+    font-size: 20px;
+}
+
+.menu li {
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+
+.menu-navigation a {
+    color: #cdcdcd;
+    text-decoration: none;
+    transition: color 0.5 cubic-bezier(ease-in-out);
+}
+
+#présentation {
+    margin: 10em 27em;
+    padding: 15px;
 }
