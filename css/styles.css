@@ -8,8 +8,19 @@ header {
     text-align: center;
 }
 
+footer {
+    background: #454545;
+}
+
 p {
     margin: 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
 }
 
 .menu-navigation {
@@ -17,7 +28,7 @@ p {
     z-index: 1;
     align-items: center;
     padding: 1em;
-    background: gray;
+    background: #454545;
 }
 
 .menu {
@@ -39,7 +50,7 @@ p {
 }
 
 .menu-navigation .menu li {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .menu li {
@@ -48,7 +59,7 @@ p {
 }
 
 .menu-navigation a {
-    color: #cdcdcd;
+    color: #ededed;
     text-decoration: none;
     transition: color 0.5 cubic-bezier(ease-in-out);
 }
