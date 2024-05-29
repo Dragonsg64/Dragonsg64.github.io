@@ -7,6 +7,10 @@ h2 {
     color: black;
 }
 
+p {
+    margin: 0;
+}
+
 header {
     display: block;
     unicode-bidi: isolate;
