@@ -35,7 +35,7 @@ footer p {
 
 .menu {
     position: relative;
-    width: 100%;    
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -88,7 +88,6 @@ footer p {
 #background {
     background: url('../images/fond_code.jpg');
 }
-
 #welcome {
     height: 75vh;
     width: 100%;
