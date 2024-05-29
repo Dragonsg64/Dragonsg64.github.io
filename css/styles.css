@@ -3,17 +3,18 @@ body {
     font-family: "maFont", sans-serif;
 }
 
+main {
+    margin-left: 304px;
+}
+
 h2 {
     color: black;
+    margin-top: 0;
+    font-size: 4vh;
 }
 
 p {
     margin: 0;
-}
-
-header {
-    display: block;
-    unicode-bidi: isolate;
 }
 
 @font-face {
@@ -21,20 +22,62 @@ header {
     src: url("../fonts/Mukta-Regular.ttf");
 }
 
-footer {
-    background: #454545;
+
+/* ------------------
+   ###  HEADER  ###
+------------------- */
+
+
+#header {
+    display: block;
+    unicode-bidi: isolate;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30vh;
+    padding: 10px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #0f0f0f, #575757);
 }
 
-footer p {
-    text-align: center;
-    color: white;
-    font-size: 2vh;
-
-}
+@media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    #main {
+      margin-left: 0;
+    }
+  
+    .container,
+    .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
 
 .navigation-bar {
     z-index: 1;
     padding: 1em;
+}
+
+.navigation-bar .menu li {
+    font-size: 22px;
+    marker: none;
+}
+
+.navigation-bar a {
+    color: #ededed;
+    text-decoration: none;
+}
+
+.profile h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
 }
 
 .menu {
@@ -54,76 +97,103 @@ footer p {
     list-style-type: none;
 }
 
-.navigation-bar .menu li {
-    font-size: 22px;
-    marker: none;
-}
+
 
 .menu li {
     margin: 0px 20px;
     padding: 0px 20px;
 }
 
-.navigation-bar a {
-    color: #ededed;
-    text-decoration: none;
-    transition: color 0.5 cubic-bezier(ease-in-out);
+
+
+/* ------------------
+   ###  FOOTER  ###
+------------------- */
+
+
+footer {
+    background: #454545;
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 30vh;
-    padding: 10px;
-    z-index: 1;
-    background-color: rgb(83, 83, 83);
-
-}
-
-.profile p {
-    margin: 0;
-    padding: 10px;
-    font-size: 4vh;
+footer p {
     text-align: center;
+    color: white;
+    font-size: 2vh;
+
 }
+
+
+/* ------------------
+   ###  WELCOME  ###
+------------------- */
+
 
 #background {
     background: url('../images/fond_code.jpg');
-}
-#welcome {
-    height: 75vh;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
     translate: (-50%, -50%);
-    background-size: cover;
+}
+
+#welcome {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 30%;
 }
 
 #welcome h1 {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
+    font-size: 8vh;
+    margin-bottom: 0;
 }
 
 #welcome p {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
+    font-size: 4vh;
 }
 
-#profile {
-    margin: 15vh 45vh;
+
+/* ------------------
+   ###  PROFILE  ###
+------------------- */
+
+
+#about {
+    margin: 0px 18vh;
     padding: 2vh;
-    background-color: rgb(110, 110, 110);
 }
+
+#about p {
+    font-size: 2vh;
+}
+
+/* ------------------
+   ###  PROFILE  ###
+------------------- */
+
+
+#parcours {
+    margin: 0px 18vh;
+    padding: 2vh;
+}
+
+
+/* ------------------
+   ###  PROJETS  ###
+------------------- */
+
 
 #projets {
     margin: 15vh 45vh;
     padding: 2vh;
     background-color: rgb(110, 110, 110);
 }
+
+
+/* ------------------
+   ###  VEILLE  ###
+------------------- */
+
 
 #veille {
     margin: 15vh 45vh;
