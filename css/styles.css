@@ -22,11 +22,9 @@ p {
     src: url("../fonts/Mukta-Regular.ttf");
 }
 
-
 /* ------------------
    ###  HEADER  ###
 ------------------- */
-
 
 #header {
     display: block;
@@ -43,19 +41,19 @@ p {
 
 @media (max-width: 110vh) {
     #header {
-      left: -300px;
+        left: -300px;
     }
   
     #main {
-      margin-left: 0;
+        margin-left: 0;
     }
   
     .container,
     .container-fluid {
-      padding-left: 12px;
-      padding-right: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
-  }
+}
 
 .navigation-bar {
     z-index: 1;
@@ -86,40 +84,29 @@ p {
     margin-top: 1.8vh;
 }
 
-.social-links button {
+.social-links a {
+    display: inline-block;
     margin-right: 2.5vh;
-    height: 4.2vh;
-    width: 4.2vh;
+    height: 3.8vh;
+    width: 3.8vh;
     border-radius: 50%;
+    background-size: cover;
 }
 
-.social-links button:last-child {
+.social-links a:last-child {
     margin-right: 0;
 }
 
-
 .github {
     background: url("../images/icon_github.png");
-    background-size: cover;
-    height: 4.2vh;
-    width: 4.2vh;
-    border-radius: 50%; 
 }
 
-.gmail{
+.gmail {
     background: url("../images/icon_gmail.png");
-    background-size: cover;
-    height: 4.2vh;
-    width: 4.2vh;
-    border-radius: 50%; 
 }
 
-.linkedin{
+.linkedin {
     background: url("../images/icon_linkedin.png");
-    background-size: cover;
-    height: 4.2vh;
-    width: 4.2vh;
-    border-radius: 50%; 
 }
 
 .menu {
@@ -136,19 +123,14 @@ p {
     list-style-type: none;
 }
 
-
-
 .menu li {
     margin: 0px 20px;
     padding: 0.5vh 2vh;
 }
 
-
-
 /* ------------------
    ###  FOOTER  ###
 ------------------- */
-
 
 footer {
     background: #454545;
@@ -158,14 +140,11 @@ footer p {
     text-align: center;
     color: white;
     font-size: 2vh;
-
 }
-
 
 /* ------------------
    ###  WELCOME  ###
 ------------------- */
-
 
 #background {
     background: url('../images/fond_code.jpg');
@@ -184,12 +163,12 @@ footer p {
 }
 
 @keyframes glow {
-    from{
-        text-shadow: 0 0 50px rgb(255, 166, 0)
-      }
-      to {
-        text-shadow: 0 0 10px rgb(255, 166, 0)
-      }
+    from {
+        text-shadow: 0 0 50px rgb(255, 166, 0);
+    }
+    to {
+        text-shadow: 0 0 10px rgb(255, 166, 0);
+    }
 }
 
 #welcome h1 {
@@ -201,11 +180,9 @@ footer p {
     font-size: 4vh;
 }
 
-
 /* ------------------
    ###  ABOUT  ###
 ------------------- */
-
 
 #about {
     margin: 0px 10vh;
@@ -224,28 +201,23 @@ footer p {
    ###  PARCOURS  ###
 ------------------- */
 
-
 #parcours {
     margin: 0px 10vh;
     padding: 2vh;
 }
 
-
 /* ------------------
    ###  PROJETS  ###
 ------------------- */
-
 
 #projets {
     margin: 0px 10vh;
     padding: 2vh;
 }
 
-
 /* ------------------
    ###  VEILLE  ###
 ------------------- */
-
 
 #veille {
     margin: 0px 10vh;
