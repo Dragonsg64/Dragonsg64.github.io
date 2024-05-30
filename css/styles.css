@@ -41,7 +41,7 @@ p {
     background: linear-gradient(to bottom, #0f0f0f, #575757);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 110vh) {
     #header {
       left: -300px;
     }
@@ -80,6 +80,48 @@ p {
     color: white;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-links button {
+    margin-right: 20px; /* Ajout d'une marge à droite de chaque bouton, ajustez selon vos préférences */
+    height: 35px; /* Définir la hauteur */
+    width: 35px; /* Définir la largeur */
+    border-radius: 50%; /* Rendre les boutons ronds */
+}
+
+.social-links button:last-child {
+    margin-right: 0;
+}
+
+
+.github {
+    background: url("../images/icon_github.png");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%; 
+}
+
+.gmail{
+    background: url("../images/icon_gmail.png");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%; 
+}
+
+.linkedin{
+    background: url("../images/icon_linkedin.png");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%; 
+}
+
 .menu {
     position: relative;
     width: 100%;
@@ -87,13 +129,10 @@ p {
 }
 
 .menu ul {
-    margin: 0 auto;
-    padding: 0;
+    margin-top: 5vh;
+    padding: 10px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     list-style-type: none;
 }
 
@@ -101,7 +140,7 @@ p {
 
 .menu li {
     margin: 0px 20px;
-    padding: 0px 20px;
+    padding: 5px 20px;
 }
 
 
@@ -141,6 +180,16 @@ footer p {
     color: white;
     top: 30%;
     left: 30%;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from{
+        text-shadow: 0 0 50px rgb(255, 166, 0)
+      }
+      to {
+        text-shadow: 0 0 10px rgb(255, 166, 0)
+      }
 }
 
 #welcome h1 {
@@ -154,12 +203,12 @@ footer p {
 
 
 /* ------------------
-   ###  PROFILE  ###
+   ###  ABOUT  ###
 ------------------- */
 
 
 #about {
-    margin: 0px 18vh;
+    margin: 0px 10vh;
     padding: 2vh;
 }
 
@@ -167,13 +216,17 @@ footer p {
     font-size: 2vh;
 }
 
+.Bold {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
 /* ------------------
-   ###  PROFILE  ###
+   ###  PARCOURS  ###
 ------------------- */
 
 
 #parcours {
-    margin: 0px 18vh;
+    margin: 0px 10vh;
     padding: 2vh;
 }
 
@@ -184,9 +237,8 @@ footer p {
 
 
 #projets {
-    margin: 15vh 45vh;
+    margin: 0px 10vh;
     padding: 2vh;
-    background-color: rgb(110, 110, 110);
 }
 
 
@@ -196,7 +248,6 @@ footer p {
 
 
 #veille {
-    margin: 15vh 45vh;
+    margin: 0px 10vh;
     padding: 2vh;
-    background-color: rgb(110, 110, 110);
 }
