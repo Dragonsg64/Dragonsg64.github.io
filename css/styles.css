@@ -207,7 +207,7 @@ footer p {
 }
 
 #parcours p {
-    margin: 4vh 4vh;
+    margin: 4vh 0px 0px 20vh;
 }
 
 /* ------------------
@@ -221,6 +221,7 @@ footer p {
 
 #projets div {
     text-align: center;
+    margin-right: 10vh;
 }
 
 /* ------------------
