@@ -206,6 +206,10 @@ footer p {
     padding: 2vh;
 }
 
+#parcours p {
+    margin: 4vh 0px 0px 20vh;
+}
+
 /* ------------------
    ###  PROJETS  ###
 ------------------- */
@@ -213,6 +217,11 @@ footer p {
 #projets {
     margin: 0px 10vh;
     padding: 2vh;
+}
+
+#projets div {
+    text-align: center;
+    margin-right: 10vh;
 }
 
 /* ------------------
